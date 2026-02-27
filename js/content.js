@@ -20,7 +20,7 @@ const i18n = {
 
     // About
     about_title: "About Us",
-    about_p1: "Functional Interventions Therapy, a division of Aaron B Therapy Services LLC, is dedicated to helping children develop the essential skills they need to thrive. Based in Miami, our team of licensed therapists provides compassionate, evidence-based pediatric therapy services in a supportive and engaging environment.",
+    about_p1: "Functional Interventions Therapy, a division of Aaron B Therapy Services LLC, is dedicated to helping children develop the essential skills they need to thrive. Based in Miami, our team of licensed therapists provides preventive-compensatory, evidence-based pediatric therapy services in a supportive and engaging environment.",
     about_p2: "We believe every child deserves the opportunity to reach their full potential. We work closely with families to create individualized treatment plans that address each child's unique needs, ensuring measurable progress and lasting results.",
     about_p3: "Our comprehensive approach combines Speech Therapy, Occupational Therapy, Physical Therapy, and Behavior Therapy to address every aspect of your child's development.",
 
@@ -175,7 +175,7 @@ const i18n = {
 
     // Sobre Nosotros
     about_title: "Sobre Nosotros",
-    about_p1: "Functional Interventions Therapy, una división de Aaron B Therapy Services LLC, se dedica a ayudar a los niños a desarrollar las habilidades esenciales que necesitan para prosperar. Con sede en Miami, nuestro equipo de terapeutas licenciados brinda servicios compasivos de terapia pediátrica basados en evidencia, en un ambiente de apoyo y motivación.",
+    about_p1: "Functional Interventions Therapy, una división de Aaron B Therapy Services LLC, se dedica a ayudar a los niños a desarrollar las habilidades esenciales que necesitan para prosperar. Con sede en Miami, nuestro equipo de terapeutas licenciados brinda servicios preventivo - compensatorio de terapia pediátrica basados en evidencia, en un ambiente de apoyo y motivación.",
     about_p2: "Creemos que cada niño merece la oportunidad de alcanzar su máximo potencial. Trabajamos estrechamente con las familias para crear planes de tratamiento individualizados que aborden las necesidades únicas de cada niño, asegurando un progreso medible y resultados duraderos.",
     about_p3: "Nuestro enfoque integral combina Terapia del Lenguaje, Terapia Ocupacional, Terapia Física y Terapia del Comportamiento para abordar cada aspecto del desarrollo de su hijo.",
 
