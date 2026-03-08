@@ -859,36 +859,62 @@ h1, h2, h3, h4 {
 }
 
 /* =============================
-   12b. Gallery
+   12b. Gallery Carousel
    ============================= */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+.carousel {
+  position: relative;
+  width: 100%;
+  padding: 0 56px;
 }
 
-.gallery-item {
+.carousel__viewport {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.carousel__track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  user-select: none;
+}
+
+.carousel__track--dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.carousel__media {
+  position: relative;
   overflow: hidden;
   border-radius: var(--radius-md);
   cursor: pointer;
-  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--color-teal-light);
 }
 
-.gallery-item img {
+.carousel__media img,
+.carousel__media video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 4 / 3;
   display: block;
   transition: transform 0.4s ease;
-  border-radius: var(--radius-md);
+  -webkit-user-drag: none;
 }
 
-.gallery-item:hover img {
+.carousel__media:hover img,
+.carousel__media:hover video {
   transform: scale(1.05);
 }
 
-.gallery-item::after {
+.carousel__media::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -899,8 +925,95 @@ h1, h2, h3, h4 {
   pointer-events: none;
 }
 
-.gallery-item:hover::after {
+.carousel__media:hover::after {
   opacity: 1;
+}
+
+/* Video play overlay */
+.carousel__play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel__play-overlay svg {
+  width: 56px;
+  height: 56px;
+  color: var(--color-white);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  transition: transform var(--transition);
+}
+
+.carousel__media--video:hover .carousel__play-overlay svg {
+  transform: scale(1.1);
+}
+
+/* Arrows */
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel__arrow svg {
+  width: 22px;
+  height: 22px;
+  color: var(--color-navy);
+}
+
+.carousel__arrow:hover {
+  background: var(--color-teal);
+  box-shadow: 0 4px 12px rgba(0, 160, 176, 0.3);
+}
+
+.carousel__arrow:hover svg {
+  color: var(--color-white);
+}
+
+.carousel__arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel__arrow--prev {
+  left: 0;
+}
+
+.carousel__arrow--next {
+  right: 0;
+}
+
+/* Counter */
+.carousel__counter {
+  text-align: center;
+  margin-top: 16px;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.carousel__counter-current {
+  color: var(--color-navy);
+  font-weight: 700;
 }
 
 /* =============================
@@ -1023,6 +1136,41 @@ h1, h2, h3, h4 {
   display: none;
 }
 
+.lightbox__video {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  z-index: 1;
+  max-width: 85vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  background: #000;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.lightbox.is-active .lightbox__video {
+  transform: scale(1);
+}
+
+.lightbox__counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+}
+
 /* =============================
    12d. Contact Details (updated)
    ============================= */
@@ -1129,8 +1277,8 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
+  .carousel__slide {
+    flex: 0 0 calc((100% - 16px) / 2);
   }
 
   .footer__inner {
@@ -1148,8 +1296,12 @@ h1, h2, h3, h4 {
     margin-bottom: 60px;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .carousel__slide {
+    flex: 0 0 calc((100% - 32px) / 3);
+  }
+
+  .carousel {
+    padding: 0 64px;
   }
 
   .benefits-grid {

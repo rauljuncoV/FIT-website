@@ -139,6 +139,9 @@ const i18n = {
     // Gallery
     gallery_title: "Our Clinic",
     gallery_subtitle: "Take a look at our welcoming therapy space",
+    gallery_prev: "Previous slide",
+    gallery_next: "Next slide",
+    gallery_slide_of: "of",
 
     // Contact
     contact_title: "Get In Touch",
@@ -294,6 +297,9 @@ const i18n = {
     // Galería
     gallery_title: "Nuestra Clínica",
     gallery_subtitle: "Conozca nuestro acogedor espacio de terapia",
+    gallery_prev: "Diapositiva anterior",
+    gallery_next: "Siguiente diapositiva",
+    gallery_slide_of: "de",
 
     // Contacto
     contact_title: "Contáctenos",

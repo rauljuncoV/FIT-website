@@ -256,57 +256,40 @@
           <p class="section__subtitle" data-i18n="gallery_subtitle">Take a look at our welcoming therapy space</p>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/front-1.jpeg" alt="Functional Interventions Therapy clinic storefront" loading="lazy">
+        <div class="carousel animate-on-scroll" role="region" aria-label="Gallery carousel" aria-roledescription="carousel">
+          <button class="carousel__arrow carousel__arrow--prev" data-i18n-aria="gallery_prev" aria-label="Previous slide">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="carousel__arrow carousel__arrow--next" data-i18n-aria="gallery_next" aria-label="Next slide">
+            <i data-lucide="chevron-right"></i>
+          </button>
+          <div class="carousel__viewport">
+            <div class="carousel__track" aria-live="polite">
+              <!-- Slides built dynamically by JS from galleryItems[] -->
+            </div>
           </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/front-2.jpeg" alt="Functional Interventions Therapy clinic entrance and services" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo.JPG" alt="Therapy play area with alphabet mat and stuffed animals" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 0.jpg" alt="Play area with bean bags, octopus toy, and TV" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 1.JPG" alt="Lounge area with bean bags and wall decorations" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 2.JPG" alt="Therapy room with toy storage and colorful play mat" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 3.JPG" alt="Play area with circus tent, toys, and activity stations" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 4.JPG" alt="Activity room with play tables and learning toys" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 5.JPG" alt="Full view of main therapy playroom" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 6.JPG" alt="Therapy room with toy storage and bean bag seating" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 7.JPG" alt="Therapy workstation with desk and activity supplies" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 8.JPG" alt="Small therapy room with activity table and games" loading="lazy">
-          </div>
-          <div class="gallery-item animate-on-scroll">
-            <img src="assets/gallery/photo 9.JPG" alt="Hanging storage organizers in therapy room" loading="lazy">
+          <div class="carousel__counter">
+            <span class="carousel__counter-current">1</span>
+            <span class="carousel__counter-sep" data-i18n="gallery_slide_of">of</span>
+            <span class="carousel__counter-total">32</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Gallery media viewer">
       <div class="lightbox__overlay"></div>
       <button class="lightbox__close" aria-label="Close">&times;</button>
-      <button class="lightbox__prev" aria-label="Previous image">&#8249;</button>
-      <button class="lightbox__next" aria-label="Next image">&#8250;</button>
-      <img class="lightbox__img" src="" alt="">
+      <button class="lightbox__prev" aria-label="Previous"></button>
+      <button class="lightbox__next" aria-label="Next"></button>
+      <img class="lightbox__img" src="" alt="" style="display:none;">
+      <video class="lightbox__video" controls playsinline style="display:none;"></video>
+      <div class="lightbox__counter">
+        <span class="lightbox__counter-current">1</span>
+        <span class="lightbox__counter-sep">of</span>
+        <span class="lightbox__counter-total">32</span>
+      </div>
     </div>
 
     <!-- ===== WHY CHOOSE US ===== -->
