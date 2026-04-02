@@ -14,7 +14,7 @@ const i18n = {
 
     // Hero
     hero_title: "Helping Children Reach Their Full Potential",
-    hero_subtitle: "Specialized pediatric therapy services in Speech, Occupational, Physical, and Behavior Therapy for children in Miami.",
+    hero_subtitle: "Specialized pediatric therapy services in Speech, Occupational, and Physical Therapy for children in Miami.",
     hero_cta: "Call Us: 786.633.6245",
     hero_cta2: "Our Services",
 
@@ -22,7 +22,7 @@ const i18n = {
     about_title: "About Us",
     about_p1: "Functional Interventions Therapy, a division of Aaron B Therapy Services LLC, is dedicated to helping children develop the essential skills they need to thrive. Based in Miami, our team of licensed therapists provides preventive-compensatory, evidence-based pediatric therapy services in a supportive and engaging environment.",
     about_p2: "We believe every child deserves the opportunity to reach their full potential. We work closely with families to create individualized treatment plans that address each child's unique needs, ensuring measurable progress and lasting results.",
-    about_p3: "Our comprehensive approach combines Speech Therapy, Occupational Therapy, Physical Therapy, and Behavior Therapy to address every aspect of your child's development.",
+    about_p3: "Our comprehensive approach combines Speech Therapy, Occupational Therapy, and Physical Therapy to address every aspect of your child's development.",
 
     // Services
     services_title: "Our Services",
@@ -99,28 +99,6 @@ const i18n = {
       "Long-term improvements in physical health"
     ],
 
-    // Behavior Therapy
-    bt_title: "Behavior Therapy",
-    bt_short: "Behavior therapy supports children's social and emotional development through evidence-based behavioral interventions. Our therapists help children develop positive behaviors, social skills, and emotional regulation strategies.",
-    bt_conditions: [
-      "Behavioral challenges and emotional regulation",
-      "Social skills difficulties",
-      "Attention and focus challenges",
-      "Autism Spectrum Disorder (ASD) behavioral needs"
-    ],
-    bt_techniques: [
-      "Applied Behavior Analysis (ABA) strategies",
-      "Social skills training and role-playing",
-      "Positive reinforcement techniques",
-      "Emotional regulation and coping skills training"
-    ],
-    bt_benefits: [
-      "Improved social interactions and relationships",
-      "Better emotional self-regulation",
-      "Reduced challenging behaviors",
-      "Enhanced school and community participation"
-    ],
-
     // Why Choose Us
     why_title: "Why Choose Us",
     why_1_title: "Personalized Plans",
@@ -172,7 +150,7 @@ const i18n = {
 
     // Hero
     hero_title: "Ayudando a los Niños a Alcanzar su Máximo Potencial",
-    hero_subtitle: "Servicios especializados de terapia pediátrica en Terapia del Lenguaje, Ocupacional, Física y del Comportamiento para niños en Miami.",
+    hero_subtitle: "Servicios especializados de terapia pediátrica en Terapia del Lenguaje, Ocupacional y Física para niños en Miami.",
     hero_cta: "Llámenos: 786.633.6245",
     hero_cta2: "Nuestros Servicios",
 
@@ -180,7 +158,7 @@ const i18n = {
     about_title: "Sobre Nosotros",
     about_p1: "Functional Interventions Therapy, una división de Aaron B Therapy Services LLC, se dedica a ayudar a los niños a desarrollar las habilidades esenciales que necesitan para prosperar. Con sede en Miami, nuestro equipo de terapeutas licenciados brinda servicios preventivo - compensatorio de terapia pediátrica basados en evidencia, en un ambiente de apoyo y motivación.",
     about_p2: "Creemos que cada niño merece la oportunidad de alcanzar su máximo potencial. Trabajamos estrechamente con las familias para crear planes de tratamiento individualizados que aborden las necesidades únicas de cada niño, asegurando un progreso medible y resultados duraderos.",
-    about_p3: "Nuestro enfoque integral combina Terapia del Lenguaje, Terapia Ocupacional, Terapia Física y Terapia del Comportamiento para abordar cada aspecto del desarrollo de su hijo.",
+    about_p3: "Nuestro enfoque integral combina Terapia del Lenguaje, Terapia Ocupacional y Terapia Física para abordar cada aspecto del desarrollo de su hijo.",
 
     // Servicios
     services_title: "Nuestros Servicios",
@@ -255,28 +233,6 @@ const i18n = {
       "Mejor equilibrio y coordinación",
       "Mayor capacidad para participar en juegos y deportes",
       "Mejoras a largo plazo en la salud física"
-    ],
-
-    // Terapia del Comportamiento
-    bt_title: "Terapia del Comportamiento",
-    bt_short: "La terapia del comportamiento apoya el desarrollo social y emocional de los niños a través de intervenciones conductuales basadas en evidencia. Nuestros terapeutas ayudan a los niños a desarrollar conductas positivas, habilidades sociales y estrategias de regulación emocional.",
-    bt_conditions: [
-      "Desafíos conductuales y regulación emocional",
-      "Dificultades en habilidades sociales",
-      "Desafíos de atención y concentración",
-      "Necesidades conductuales del Trastorno del Espectro Autista (TEA)"
-    ],
-    bt_techniques: [
-      "Estrategias de Análisis de Comportamiento Aplicado (ABA)",
-      "Entrenamiento en habilidades sociales y juegos de rol",
-      "Técnicas de refuerzo positivo",
-      "Entrenamiento en regulación emocional y habilidades de afrontamiento"
-    ],
-    bt_benefits: [
-      "Mejores interacciones sociales y relaciones",
-      "Mejor autorregulación emocional",
-      "Reducción de conductas desafiantes",
-      "Mayor participación escolar y comunitaria"
     ],
 
     // Por Qué Elegirnos

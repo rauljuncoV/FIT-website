@@ -42,7 +42,8 @@
     { type: 'image', src: 'assets/gallery/WhatsApp%20Image%202026-03-04%20at%205.21.09%20PM%20(7).jpeg', alt: 'Staff member at reception desk' },
     { type: 'image', src: 'assets/gallery/WhatsApp%20Image%202026-03-04%20at%205.21.09%20PM%20(8).jpeg', alt: 'Administrative staff at front office' },
     { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM.mp4', alt: 'Therapy session video' },
-    { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM%20(1).mp4', alt: 'Therapy activity video' }
+    { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM%20(1).mp4', alt: 'Therapy activity video' },
+    { type: 'video', src: 'assets/gallery/Therapy.mp4', alt: 'Therapy session video' }
   ];
 
   // ===== DOM Elements =====
@@ -125,9 +126,9 @@
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       if (lang === 'es') {
-        metaDesc.setAttribute('content', 'Functional Interventions Therapy ofrece servicios de Terapia del Lenguaje, Ocupacional, Física y del Comportamiento en Miami. Bilingüe inglés/español. Llame al 786.633.6245.');
+        metaDesc.setAttribute('content', 'Functional Interventions Therapy ofrece servicios de Terapia del Lenguaje, Ocupacional y Física en Miami. Bilingüe inglés/español. Llame al 786.633.6245.');
       } else {
-        metaDesc.setAttribute('content', 'Functional Interventions Therapy provides pediatric Speech, Occupational, Physical, and Behavior Therapy services in Miami. Bilingual English/Spanish. Call 786.633.6245.');
+        metaDesc.setAttribute('content', 'Functional Interventions Therapy provides pediatric Speech, Occupational, and Physical Therapy services in Miami. Bilingual English/Spanish. Call 786.633.6245.');
       }
     }
 
@@ -372,7 +373,7 @@
     }
 
     function maxPosition() {
-      return Math.max(0, totalSlides - getSlidesPerView());
+      return Math.max(0, totalSlides - 1);
     }
 
     function updatePosition() {
