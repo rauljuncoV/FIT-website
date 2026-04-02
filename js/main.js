@@ -42,8 +42,7 @@
     { type: 'image', src: 'assets/gallery/WhatsApp%20Image%202026-03-04%20at%205.21.09%20PM%20(7).jpeg', alt: 'Staff member at reception desk' },
     { type: 'image', src: 'assets/gallery/WhatsApp%20Image%202026-03-04%20at%205.21.09%20PM%20(8).jpeg', alt: 'Administrative staff at front office' },
     { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM.mp4', alt: 'Therapy session video' },
-    { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM%20(1).mp4', alt: 'Therapy activity video' },
-    { type: 'video', src: 'assets/gallery/Therapy.mp4', alt: 'Therapy session video' }
+    { type: 'video', src: 'assets/gallery/WhatsApp%20Video%202026-03-04%20at%205.21.10%20PM%20(1).mp4', alt: 'Therapy activity video' }
   ];
 
   // ===== DOM Elements =====
